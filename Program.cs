@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 public class Program
 {
+    
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
