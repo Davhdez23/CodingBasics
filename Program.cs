@@ -10,12 +10,12 @@ public class Program
 
         //Register a database context
         builder.Services.AddDbContext<Dbcontext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("AdventureWorks2014")));
+        builder.Services.AddScoped<ProductService>();
 
         builder.Services
         .AddSingleton<DataClient>()
         .AddSingleton<PersonService>()
         //Product
-        .AddSingleton<ProductService>()
 
         .AddCors(options =>
         {

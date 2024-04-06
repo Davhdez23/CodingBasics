@@ -18,7 +18,6 @@ public class ProductService
     }
 
     //Method GetAll
-
     public List<ProductsModel>? GetAllProducts()
     {
         try
@@ -31,11 +30,10 @@ public class ProductService
             Console.WriteLine($"Error retrieving products: {ex.Message}");
             return null;
         }
+        
     }
 
     ///GetProductByName(string name)
-    
-    
     public List<ProductsModel>? GetProductsByName(string name)
     {
         try

@@ -7,8 +7,6 @@ public class ProductsModel {
     public string? CultureID {get;set;}
     public string? Description {get;set;}
     public string? CategoryType { get;set; }
-
-
 }
 
     // Otras propiedades de la entidad ProductDescriptio}
